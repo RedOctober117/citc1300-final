@@ -189,6 +189,19 @@ td, tr {
     border-radius: 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1080px) {
     body {
         background-color: var(--bottom-layer);
@@ -286,15 +299,15 @@ td, tr {
         padding-left: 1rem;
         margin-right: -1rem;
         padding-right: 1rem;
-        padding-top: 1rem;
+        padding-top: 3rem;
     }
 
     .nav-excerpts {
         justify-content: center;
         display: inline-flex;
-        width: 60vw;
+        width: 65vw;
         margin: auto;
-        vertical-align: top;
+        position: relative;
     }
 
     .caption {
@@ -382,11 +395,12 @@ td, tr {
     }
     
     .col {
-        border: .175rem solid var(--content-border);
+        border: none;
         /* margin: 1rem .5rem; */
         /* padding: 0 1rem; */
         border-radius: var(--content-border-radius);        
         margin: auto;
+        margin-top: 1vh;
         margin-left: .5rem;
         margin-right: .5rem;
         padding: .25rem;
@@ -413,14 +427,14 @@ td, tr {
         border-radius: var(--content-border-radius);
     }
     
-    .button {
+    /* .button {
         display: block;
         background-color: var(--button-base);
-        /* padding-left: 1rem;
-        padding-right: 1rem; */
+        padding-left: 1rem;
+        padding-right: 1rem;
         padding-top: .5rem;
         padding-bottom: .5rem;
-        /* width: 100%; */
+        width: 100%;
         line-height: 1.25rem;
         font-size: 1.25rem;
         font-weight: bold;
@@ -429,7 +443,7 @@ td, tr {
         text-decoration: none;
         border: .175rem solid var(--button-border);
         border-radius: var(--content-border-radius);
-    }
+    } */
     
     .button:hover {
         background-color: var(--button-hover-base);
