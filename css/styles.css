@@ -131,7 +131,7 @@ nav {
     justify-content: center;
     /* border: .175rem solid var(--content-border); */
     border-radius: var(--content-border-radius);
-    width: 40vw;
+    width: 60vw;
     margin: auto;
 }
 
@@ -142,12 +142,9 @@ nav ul {
 
 nav li {
     display: inline-block;
-    /* width: 15%; */
+    width: 50vw;
     border: none;
     margin: auto;
-    margin-top: .25vh;
-    margin-bottom: .25vh;
-    width: 100%;
 }
 
 nav li a {
@@ -189,7 +186,16 @@ section, aside {
 }
 
 section {
-    width: 100%;
+    width: 90vw;
+}
+
+aside ul {
+    margin: 0 0;
+}
+
+aside ul li {
+    margin: 1rem auto;
+    padding: 0;
 }
 
 .single-page {
@@ -413,7 +419,7 @@ td, tr {
     
     nav li {
         display: inline-block;
-        /* width: 15%; */
+        width: auto;
         border: none;
         margin: auto;
     }
