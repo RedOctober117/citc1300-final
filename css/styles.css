@@ -14,6 +14,8 @@
 
 body {
     background-color: var(--bottom-layer);
+    /* THIS FIXES THE OVERFLOW ON THE SIDES. DO NOT ADD PADDING TO ANY OTHER THIRDS DIVS */
+    margin: 0;
 }
 
 img {
@@ -28,19 +30,19 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 4rem;
-}
-
-h2 {
     font-size: 2.5rem;
 }
 
+h2 {
+    font-size: 1.75rem;
+}
+
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.0rem;
 }
 
 .article-heading-image {
@@ -55,11 +57,13 @@ h4 {
     justify-content: center;
 }
 
-.col-image:hover {
+/* .col-image:hover {
     border-color: var(--button-hover-border);
     border: .175rem solid var(--button-hover-border);
     margin: -.1rem;
-}
+    height: calc(12vw - .350rem);
+    width: calc(12vw - .350rem);
+} */
 
 .hr {
     width: 60%;
@@ -81,10 +85,7 @@ h4 {
     /* Push the box out of bounds to make background fit whole screen */
     margin-top: -1rem;
     padding-top: 1rem;
-    margin-left: -1rem;
-    padding-left: 1rem;
-    margin-right: -1rem;
-    padding-right: 1rem;
+    /* padding-left: 1rem; */
     padding-bottom: -1rem;
     justify-content: center;
     background-color: var(--bottom-layer);
@@ -95,26 +96,26 @@ h4 {
     background-color: var(--second-layer);
     /* Push the box out of bounds to make background fit whole screen */
     padding-top: 1rem;
-    margin-left: -1rem;
+    /* margin-left: -1rem;
     padding-left: 1rem;
     margin-right: -1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
 }
 
 .lower-third {
-    display: flexbox;
+    display: flex;
     width: 100vw;
-    margin-left: -1rem;
+    /* margin-left: -1rem;
     padding-left: 1rem;
     margin-right: -1rem;
-    padding-right: 1rem;
+    padding-right: 1rem; */
     padding-top: 3rem;
 }
 
 .nav-excerpts {
     justify-content: center;
     display: inline-flexbox;
-    width: 65vw;
+    width: 85vw;
     margin: auto;
     position: relative;
 }
@@ -130,7 +131,7 @@ nav {
     justify-content: center;
     /* border: .175rem solid var(--content-border); */
     border-radius: var(--content-border-radius);
-    width: 60vw;
+    width: 40vw;
     margin: auto;
 }
 
@@ -140,9 +141,13 @@ nav ul {
 }
 
 nav li {
-    display: inline-flexbox;
+    display: inline-block;
     /* width: 15%; */
     border: none;
+    margin: auto;
+    margin-top: .25vh;
+    margin-bottom: .25vh;
+    width: 100%;
 }
 
 nav li a {
@@ -152,6 +157,7 @@ nav li a {
     padding-right: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;
+    margin: .5vw;
     /* width: 100%; */
     line-height: 1.25rem;
     font-size: 1.25rem;
@@ -183,16 +189,7 @@ section, aside {
 }
 
 section {
-    width: 60vw;
-}
-
-aside ul {
-    margin: 0 0;
-}
-
-aside ul li {
-    margin: 1rem auto;
-    padding: 0;
+    width: 100%;
 }
 
 .single-page {
@@ -209,20 +206,31 @@ aside ul li {
     /* padding: 0 1rem; */
     border-radius: var(--content-border-radius);        
     margin: auto;
-    margin-top: 1vh;
-    margin-left: .5rem;
-    margin-right: .5rem;
+    /* margin-top: 1vh; */
+    margin-bottom: 5vh;
+    /* margin-left: .5rem;
+    margin-right: .5rem; */
     padding: .25rem;
-    /* width: 20%; */
-    height: 100%;
+    width: 60%;
+    height: 25vh;
 }
 
 .col h4 {
-    margin: auto;
+    margin: 0;
+    width: 50vw;
+    text-align: justify;
 }
 
 .col hr {
-    width: 60%;
+    width: 100%;
+    justify-content: left;
+    margin-left: 0;
+}
+
+.col a img {
+    margin: 0;
+    height: 50vw;
+    width: 50vw;
 }
 
 footer {
@@ -255,11 +263,11 @@ footer {
     border-radius: var(--content-border-radius);
 } */
 
-.button:hover {
+/* .button:hover {
     background-color: var(--button-hover-base);
     color: var(--button-hover-font-color);
     border-color: var(--button-hover-border);
-}
+} */
 
 table {
     /*border: 2px solid #7287fd;*/
@@ -274,22 +282,11 @@ td, tr {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 1080px) {
     body {
         background-color: var(--bottom-layer);
+        /* THIS FIXES THE OVERFLOW ON THE SIDES. DO NOT ADD PADDING TO ANY OTHER THIRDS DIVS */
+        margin: 0;
     }
     
     img {
@@ -334,7 +331,9 @@ td, tr {
     .col-image:hover {
         border-color: var(--button-hover-border);
         border: .175rem solid var(--button-hover-border);
-        margin: -.1rem;
+        /* margin: -.1rem; */
+        height: calc(12vw - .350rem);
+        width: calc(12vw - .350rem);
     }
 
     .hr {
@@ -357,10 +356,7 @@ td, tr {
         /* Push the box out of bounds to make background fit whole screen */
         margin-top: -1rem;
         padding-top: 1rem;
-        margin-left: -1rem;
-        padding-left: 1rem;
-        margin-right: -1rem;
-        padding-right: 1rem;
+        /* padding-left: 1rem; */
         padding-bottom: -1rem;
         justify-content: center;
         background-color: var(--bottom-layer);
@@ -371,19 +367,19 @@ td, tr {
         background-color: var(--second-layer);
         /* Push the box out of bounds to make background fit whole screen */
         padding-top: 1rem;
-        margin-left: -1rem;
+        /* margin-left: -1rem;
         padding-left: 1rem;
         margin-right: -1rem;
-        padding-right: 1rem;
+        padding-right: 1rem; */
     }
 
     .lower-third {
         display: flex;
         width: 100vw;
-        margin-left: -1rem;
+        /* margin-left: -1rem;
         padding-left: 1rem;
         margin-right: -1rem;
-        padding-right: 1rem;
+        padding-right: 1rem; */
         padding-top: 3rem;
     }
 
@@ -419,6 +415,7 @@ td, tr {
         display: inline-block;
         /* width: 15%; */
         border: none;
+        margin: auto;
     }
     
     nav li a {
@@ -428,6 +425,7 @@ td, tr {
         padding-right: 1rem;
         padding-top: .5rem;
         padding-bottom: .5rem;
+        margin: .5vw;
         /* width: 100%; */
         line-height: 1.25rem;
         font-size: 1.25rem;
@@ -489,16 +487,25 @@ td, tr {
         margin-left: .5rem;
         margin-right: .5rem;
         padding: .25rem;
-        width: 20%;
-        height: 100%;
+        width: 20vw;
+        height: 28vh;
     }
 
     .col h4 {
-        margin: auto;
+        margin: 0;
+        width: 10vw;
+        text-align: justify;
     }
 
     .col hr {
-        width: 60%;
+        width: 80%;
+        justify-content: left;
+        margin-left: 0;
+    }
+
+    .col a img {
+        height: 12vw;
+        width: 12vw;
     }
     
     footer {
@@ -506,6 +513,7 @@ td, tr {
         background-color: var(--bottom-layer);
         width: 20%;
         text-align: center;
+        margin: auto;
         margin-bottom: 1rem;
         padding: .01rem 0;
         color: var(--text);
@@ -530,11 +538,11 @@ td, tr {
         border-radius: var(--content-border-radius);
     } */
     
-    .button:hover {
+    /* .button:hover {
         background-color: var(--button-hover-base);
         color: var(--button-hover-font-color);
         border-color: var(--button-hover-border);
-    }
+    } */
     
     table {
         /*border: 2px solid #7287fd;*/
