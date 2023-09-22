@@ -96,6 +96,7 @@ h4 {
     background-color: var(--second-layer);
     /* Push the box out of bounds to make background fit whole screen */
     padding-top: 1rem;
+    padding-bottom: 1rem;
     /* margin-left: -1rem;
     padding-left: 1rem;
     margin-right: -1rem;
@@ -109,7 +110,7 @@ h4 {
     padding-left: 1rem;
     margin-right: -1rem;
     padding-right: 1rem; */
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .nav-excerpts {
@@ -124,6 +125,20 @@ h4 {
     text-align: center;
     font-style: italic;
     font-size: .9rem;
+}
+
+.single-article {
+    border: .175rem solid var(--content-border);
+    margin: auto;
+    padding: .25rem;
+    border-radius: var(--content-border-radius);
+    width: 90vw;
+}
+
+.single-article p {
+    padding: 1rem;
+    margin: auto;
+    text-align: left;
 }
 
 nav {
@@ -173,7 +188,7 @@ nav li a:hover {
 }
 
 main {
-    display: flex;
+    display: block;
     justify-content: center;
     width: 100%;
 }
@@ -181,7 +196,7 @@ main {
 section, aside {
     border: .175rem solid var(--content-border);
     margin: 1rem;
-    padding: 1rem;
+    padding: .25rem;
     border-radius: var(--content-border-radius);
 }
 
@@ -304,6 +319,7 @@ td, tr {
     
     h1, h2, h3, h4 {
         color: var(--text);
+        margin: 1rem;
     }
     
     h1 {
@@ -373,6 +389,7 @@ td, tr {
         background-color: var(--second-layer);
         /* Push the box out of bounds to make background fit whole screen */
         padding-top: 1rem;
+        padding-bottom: 1rem;
         /* margin-left: -1rem;
         padding-left: 1rem;
         margin-right: -1rem;
@@ -386,7 +403,7 @@ td, tr {
         padding-left: 1rem;
         margin-right: -1rem;
         padding-right: 1rem; */
-        padding-top: 3rem;
+        padding-top: 1rem;
     }
 
     .nav-excerpts {
@@ -401,6 +418,20 @@ td, tr {
         text-align: center;
         font-style: italic;
         font-size: .9rem;
+    }
+
+    .single-article {
+        border: .175rem solid var(--content-border);
+        margin: auto;
+        /* padding: 1rem; */
+        border-radius: var(--content-border-radius);
+        width: 60vw;
+    }
+
+    .single-article p {
+        padding: 1rem;
+        margin: auto;
+        text-align: left;
     }
     
     nav {
@@ -450,7 +481,7 @@ td, tr {
     }
     
     main {
-        display: flex;
+        display: block;
         justify-content: center;
         width: 100%;
     }
