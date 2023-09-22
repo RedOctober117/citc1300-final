@@ -425,7 +425,7 @@ td, tr {
         margin: auto;
         /* padding: 1rem; */
         border-radius: var(--content-border-radius);
-        width: 60vw;
+        width: 55vw;
     }
 
     .single-article p {
@@ -531,7 +531,7 @@ td, tr {
     .col h4 {
         margin: 0;
         width: 10vw;
-        text-align: justify;
+        text-align: left;
     }
 
     .col hr {
@@ -551,6 +551,7 @@ td, tr {
         width: 20%;
         text-align: center;
         margin: auto;
+        margin-top: 3vh;
         margin-bottom: 1rem;
         padding: .01rem 0;
         color: var(--text);
