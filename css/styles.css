@@ -397,6 +397,7 @@ td {
 
 
     .middle-third {
+        display: inline-block;
         background-color: var(--second-layer);
         /* Push the box out of bounds to make background fit whole screen */
         padding-top: 1rem;
