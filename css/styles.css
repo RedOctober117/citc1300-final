@@ -86,7 +86,7 @@ h4 {
     margin-top: -1rem;
     padding-top: 1rem;
     /* padding-left: 1rem; */
-    padding-bottom: -1rem;
+    /* padding-bottom: -1rem; */
     justify-content: center;
     background-color: var(--bottom-layer);
 }
@@ -115,7 +115,7 @@ h4 {
 
 .nav-excerpts {
     justify-content: center;
-    display: inline-flexbox;
+    display: inline-flex;
     width: 85vw;
     margin: auto;
     position: relative;
@@ -397,7 +397,7 @@ td {
         margin-top: -1rem;
         padding-top: 1rem;
         /* padding-left: 1rem; */
-        padding-bottom: -1rem;
+        /* padding-bottom: -1rem; */
         justify-content: center;
         background-color: var(--bottom-layer);
     }
