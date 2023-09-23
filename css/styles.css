@@ -198,14 +198,21 @@ main {
 }
 
 section, aside {
-    border: none;
-    margin: 1rem;
-    padding: .25rem;
-    /* border-radius: var(--content-border-radius); */
+    display: inline-flex;
+    border: .175rem solid var(--content-border);
+    margin: auto;
+    padding: 1rem;
+    border-radius: var(--content-border-radius);
 }
 
 section {
-    width: 90vw;
+    width: 30%;
+    margin: auto;
+}
+
+aside {
+    width: 30%;
+    margin: auto;
 }
 
 aside ul {
@@ -397,7 +404,6 @@ td {
 
 
     .middle-third {
-        display: inline-block;
         background-color: var(--second-layer);
         /* Push the box out of bounds to make background fit whole screen */
         padding-top: 1rem;
