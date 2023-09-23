@@ -115,7 +115,7 @@ h4 {
 
 .nav-excerpts {
     justify-content: center;
-    display: inline-flex;
+    display: inline-block;
     width: 85vw;
     margin: auto;
     position: relative;
