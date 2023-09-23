@@ -141,6 +141,10 @@ h4 {
     text-align: left;
 }
 
+.single-article .caption {
+    text-align: center;
+}
+
 nav {
     display: block;
     justify-content: center;
@@ -194,10 +198,10 @@ main {
 }
 
 section, aside {
-    border: .175rem solid var(--content-border);
+    border: none;
     margin: 1rem;
     padding: .25rem;
-    border-radius: var(--content-border-radius);
+    /* border-radius: var(--content-border-radius); */
 }
 
 section {
@@ -237,7 +241,7 @@ aside ul li {
 }
 
 .col h4 {
-    margin: 0;
+    margin: auto;
     width: 50vw;
     text-align: justify;
 }
@@ -249,7 +253,7 @@ aside ul li {
 }
 
 .col a img {
-    margin: 0;
+    margin: auto;
     height: 50vw;
     width: 50vw;
 }
@@ -292,14 +296,21 @@ footer {
 
 table {
     /*border: 2px solid #7287fd;*/
+    margin: auto;
 }
 
 td, tr {
-    border: .175rem solid var(--content-border);
+    /* border: .175rem solid var(--content-border); */
+}
+
+td {
+    padding: 1rem;
 }
 
 .square-image {
     border-radius: 0px;
+    /* border: .175rem solid var(--content-border); */
+    /* width: 95%; */
 }
 
 
@@ -487,14 +498,21 @@ td, tr {
     }
     
     section, aside {
+        display: inline-flex;
         border: .175rem solid var(--content-border);
-        margin: 1rem;
+        margin: auto;
         padding: 1rem;
         border-radius: var(--content-border-radius);
     }
     
     section {
-        width: 60vw;
+        width: 30%;
+        margin: auto;
+    }
+
+    aside {
+        width: 30%;
+        margin: auto;
     }
     
     aside ul {
@@ -583,14 +601,16 @@ td, tr {
     } */
     
     table {
-        /*border: 2px solid #7287fd;*/
     }
     
     td, tr {
-        border: .175rem solid var(--content-border);
     }
     
     .square-image {
+        margin: auto;
         border-radius: 0px;
+        width: 10vw;
+        height: 10vw;
+
     }
 }
